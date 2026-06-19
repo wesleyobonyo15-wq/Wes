@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration form</title>
+</head>
+<body>
+    <h1>Patient Registration Form</h1>
+    <p>please fill in all the required fields before submitting </p>
+    <form>
+        <label for="Full name">Name:</label>
+        <input type="text" id="Full name" name="Full name" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br><br>
+        <label for = "Date of birth">Date of Birth:</label>
+        <input type="date" id="Date of birth" name="Date of birth" required>
+        <br><br>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+        <label for="services">Services Required:</label>    
+        <input type="checkbox" id="consultation" name="services" value="Consultation">
+        <label for="consultation">Consultation</label>
+        <input type="checkbox" id="laboratory test" name="services" value="Laboratory test">
+        <label for="laboratory test">Laboratory</label>
+        <input type="checkbox" id="pharmacy" name="services" value="Pharmacy">
+        <label for="pharmacy">Pharmacy</label>
+        <br><br>
+        <label for="county">County of Residence:</label>
+        <select id="county" name="county" required>
+            <option value="">Select</option>
+            <option value="nairobi">Nairobi</option>
+            <option value="mombasa">Mombasa</option>
+            <option value="kisumu">Kisumu</option>
+            <option value="nakuru">Nakuru</option>
+            <option value="eldoret">Eldoret</option>
+        </select>
+        <br><br>
+        <label for="comments">Additional comments:</label>
+        <textarea id="comments" name="comments"></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
